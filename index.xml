@@ -6,24 +6,56 @@
     <description>Recent content in Home on Alvin&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Oct 2023 21:16:36 +0800</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Another Note on A blogdown Tutorial</title>
-      <link>http://alvinzheng-rgb.github.io/note/2017/06/14/another-note/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      <title>同概率输出序列的某一元素（不使用额外空间）</title>
+      <link>http://alvinzheng-rgb.github.io/note/2023/10/13/output-uniformly-at-random/</link>
+      <pubDate>Fri, 13 Oct 2023 21:16:36 +0800</pubDate>
       
-      <guid>http://alvinzheng-rgb.github.io/note/2017/06/14/another-note/</guid>
-      <description>I just discovered an awesome tutorial on blogdown written by Alison. I have to admit this is the best blogdown tutorial I have seen so far.</description>
+      <guid>http://alvinzheng-rgb.github.io/note/2023/10/13/output-uniformly-at-random/</guid>
+      <description>Problem Reading a sequence of words from standard input and prints one of those words uniformly at random. Do not store the words in an array or list.
+Method Knuth’s method: when reading the ith word, select it with probability 1/i to be the champion, replacing the previous champion. After reading all of the words, print the surviving champion.
+Why it works For the ith member, its probability of becoming a champion is……</description>
     </item>
     
     <item>
-      <title>A Quick Note on Two Beautiful Websites</title>
-      <link>http://alvinzheng-rgb.github.io/note/2017/06/13/a-quick-note/</link>
-      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Java命令行编译、运行时的顺序问题</title>
+      <link>http://alvinzheng-rgb.github.io/note/2023/10/13/java-command-line-orders/</link>
+      <pubDate>Fri, 13 Oct 2023 20:42:58 +0800</pubDate>
       
-      <guid>http://alvinzheng-rgb.github.io/note/2017/06/13/a-quick-note/</guid>
-      <description>To me, the two most impressive websites based on blogdown are:
-Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al. I&amp;rsquo;m sure there will be more.</description>
+      <guid>http://alvinzheng-rgb.github.io/note/2023/10/13/java-command-line-orders/</guid>
+      <description>在完成Princeton Algorithms, Part 1的其中一个assignment时，我遇到了如下问题：
+RandomWord.java是我编写的java文件，其中需要使用algs4.jar中的类文件。classpath是一组目录的集合，它设置了JVM的搜索路径。因此，在命令行中进行编译的时候，需要通过-cp（classpath）说明algs4.jar的位置。如若不指定-cp，则它默认值为.，即当前目录。
+出现问题的原因在于，在命令行中使用java编译源文件时，-cp参数通常应该放在源文件之前，这是规则。如若使用javac命令进行编译而不运行，顺序随意；如若使用java指令，则一定要注意顺序问题，否则会提示程序包不存在。Java编译器要求-cp参数在源文件之前是为了确保正确解析命令行参数并找到所需的类文件和库文件，这是Java编译过程的关键部分。
+当然，也可以在系统classpath中包含这个路径，但由于该jar文件使用范围不广，这样做会污染系统环境，因此不考虑。</description>
+    </item>
+    
+    <item>
+      <title>“The emulator process for AVD has terminated”解决方法</title>
+      <link>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</guid>
+      <description>问题描述 在Device Manager中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。
+原因分析 AVD所在磁盘空间不足。
+The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.7GB, Pixel_API_21 - 5.6GB
+解决方案 更改AVD的默认路径。参考博客Android 修改AVD路径。
+重启Android Studio。
+Reference Android Emulator issues in new versions - The emulator process has terminated Android 修改AVD路径 </description>
+    </item>
+    
+    <item>
+      <title>微信小程序开发 | 数据绑定无法实现</title>
+      <link>http://alvinzheng-rgb.github.io/note/2022/12/03/data-binding-errors/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2022/12/03/data-binding-errors/</guid>
+      <description>问题描述 在pages/wxml/index.wxml内有如下语句：
+&amp;lt;!--pages/wxml/index.wxml--&amp;gt;&amp;lt;text&amp;gt;time now: {{ time }} &amp;lt;/text&amp;gt;&amp;lt;text&amp;gt;{{ a==10? &amp;quot;var a = 10&amp;quot; : &amp;quot;var a != 10&amp;quot;}}&amp;lt;/text&amp;gt;且在pages/wxml/index.js中有对应定义：
+data: {time: (new Date()).toString(),a: 10},但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
+原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
+解决方案 删除文件index.ts，或使用ts文件实现对应声明。
+reference 微信开发工具ts和js文件冲突</description>
     </item>
     
     <item>
@@ -45,6 +77,17 @@ You cannot run any R code in a plain Markdown document, whereas in an R Markdown
       <guid>http://alvinzheng-rgb.github.io/post/2015/07/23/lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Quisque mattis volutpat lorem vitae feugiat.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://alvinzheng-rgb.github.io/note/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/1/01/01/</guid>
+      <description>get in the mindset of being an active participant who writes and debugs code, solves problems, studies the available resources, and engages in the discussion forums, as opposed to a passive participant who just watches the lectures.
+ALGORITHMS Part 1 1 introduction This lecture focuses on why we learn about algorithms. They may unlock the secrets of life and of the universe. This reason really motivates me.
+Also, building an aesthetic about algorithms.</description>
     </item>
     
     <item>

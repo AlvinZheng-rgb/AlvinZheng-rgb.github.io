@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android studio on Alvin&#39;s Site</title>
+    <link>http://alvinzheng-rgb.github.io/tags/android-studio/</link>
+    <description>Recent content in android studio on Alvin&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/tags/android-studio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>“The emulator process for AVD has terminated”解决方法</title>
+      <link>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</guid>
+      <description>问题描述 在Device Manager中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。
+原因分析 AVD所在磁盘空间不足。
+The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.7GB, Pixel_API_21 - 5.6GB
+解决方案 更改AVD的默认路径。参考博客Android 修改AVD路径。
+重启Android Studio。
+Reference Android Emulator issues in new versions - The emulator process has terminated Android 修改AVD路径 </description>
+    </item>
+    
+  </channel>
+</rss>

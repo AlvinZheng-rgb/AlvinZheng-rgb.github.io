@@ -2,34 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://alvinzheng-rgb.github.io/note/2017/06/14/another-note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>http://alvinzheng-rgb.github.io/categories/algorithms/</loc>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/categories/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://alvinzheng-rgb.github.io/categories/example/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/tags/space/</loc>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/tags/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
   </url><url>
-    <loc>http://alvinzheng-rgb.github.io/tags/tutorial/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>http://alvinzheng-rgb.github.io/note/2023/10/13/output-uniformly-at-random/</loc>
+    <lastmod>2023-10-13T21:16:36+08:00</lastmod>
   </url><url>
-    <loc>http://alvinzheng-rgb.github.io/note/2017/06/13/a-quick-note/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <loc>http://alvinzheng-rgb.github.io/tags/debug/</loc>
+    <lastmod>2023-10-13T20:42:58+08:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/categories/java/</loc>
+    <lastmod>2023-10-13T20:42:58+08:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/note/2023/10/13/java-command-line-orders/</loc>
+    <lastmod>2023-10-13T20:42:58+08:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/tags/android-studio/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/categories/development/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/note/2022/12/03/data-binding-errors/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/post/2016/02/15/a-plain-markdown-post/</loc>
     <lastmod>2016-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/tags/blogdown/</loc>
+    <lastmod>2016-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/categories/example/</loc>
     <lastmod>2016-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/categories/hugo/</loc>
@@ -52,6 +76,8 @@
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/post/2015/07/23/lorem-ipsum/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://alvinzheng-rgb.github.io/note/1/01/01/</loc>
   </url><url>
     <loc>http://alvinzheng-rgb.github.io/about/</loc>
   </url>

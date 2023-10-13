@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on Alvin&#39;s Site</title>
+    <link>http://alvinzheng-rgb.github.io/categories/development/</link>
+    <description>Recent content in development on Alvin&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>“The emulator process for AVD has terminated”解决方法</title>
+      <link>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2022/12/03/emulator-process-for-avd-terminated/</guid>
+      <description>问题描述 在Device Manager中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。
+原因分析 AVD所在磁盘空间不足。
+The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.7GB, Pixel_API_21 - 5.6GB
+解决方案 更改AVD的默认路径。参考博客Android 修改AVD路径。
+重启Android Studio。
+Reference Android Emulator issues in new versions - The emulator process has terminated Android 修改AVD路径 </description>
+    </item>
+    
+    <item>
+      <title>微信小程序开发 | 数据绑定无法实现</title>
+      <link>http://alvinzheng-rgb.github.io/note/2022/12/03/data-binding-errors/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2022/12/03/data-binding-errors/</guid>
+      <description>问题描述 在pages/wxml/index.wxml内有如下语句：
+&amp;lt;!--pages/wxml/index.wxml--&amp;gt;&amp;lt;text&amp;gt;time now: {{ time }} &amp;lt;/text&amp;gt;&amp;lt;text&amp;gt;{{ a==10? &amp;quot;var a = 10&amp;quot; : &amp;quot;var a != 10&amp;quot;}}&amp;lt;/text&amp;gt;且在pages/wxml/index.js中有对应定义：
+data: {time: (new Date()).toString(),a: 10},但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
+原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
+解决方案 删除文件index.ts，或使用ts文件实现对应声明。
+reference 微信开发工具ts和js文件冲突</description>
+    </item>
+    
+  </channel>
+</rss>

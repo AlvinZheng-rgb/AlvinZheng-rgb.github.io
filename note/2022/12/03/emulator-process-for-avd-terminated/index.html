@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>“The emulator process for AVD has terminated”解决方法 | Alvin&#39;s Site</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">“The emulator process for AVD has terminated”解决方法</span></h1>
+<h2 class="author">Alvin</h2>
+<h2 class="date">2022/12/03</h2>
+</div>
+
+<main>
+<h2 id="问题描述">问题描述</h2>
+<p>在<code>Device Manager</code>中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。</p>
+<h2 id="原因分析">原因分析</h2>
+<p>AVD所在磁盘空间不足。</p>
+<blockquote>
+<p>The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.7GB, Pixel_API_21 - 5.6GB</p>
+</blockquote>
+<h2 id="解决方案">解决方案</h2>
+<ol>
+<li>
+<p>更改AVD的默认路径。参考博客<a href="https://blog.51cto.com/u_15127626/3296953">Android 修改AVD路径</a>。</p>
+</li>
+<li>
+<p><strong>重启Android Studio</strong>。</p>
+</li>
+</ol>
+<h2 id="reference">Reference</h2>
+<ol>
+<li><a href="https://stackoverflow.com/questions/67346232/android-emulator-issues-in-new-versions-the-emulator-process-has-terminated">Android Emulator issues in new versions - The emulator process has terminated</a></li>
+<li><a href="https://blog.51cto.com/u_15127626/3296953">Android 修改AVD路径</a></li>
+</ol>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="https://AlvinZheng-rgb.github.io">Wenxin Zheng</a> 2023 &ndash; 2023 | <a href="https://github.com/AlvinZheng-rgb">Github</a> | <a href="https://twitter.com">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

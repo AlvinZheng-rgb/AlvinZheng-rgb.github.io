@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java命令行编译、运行时的顺序问题 | Alvin&#39;s Site</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Java命令行编译、运行时的顺序问题</span></h1>
+<h2 class="author">Alvin Zheng</h2>
+<h2 class="date">2023/10/13</h2>
+</div>
+
+<main>
+<p>在完成Princeton Algorithms, Part 1的其中一个assignment时，我遇到了如下问题：</p>
+<p><img src="/img/image-20231013204827854.png" alt=""></p>
+<p><code>RandomWord.java</code>是我编写的java文件，其中需要使用<code>algs4.jar</code>中的类文件。<code>classpath</code>是一组目录的集合，它设置了JVM的搜索路径。因此，在命令行中进行编译的时候，需要通过<code>-cp</code>（classpath）说明<code>algs4.jar</code>的位置。如若不指定<code>-cp</code>，则它默认值为<code>.</code>，即当前目录。</p>
+<p>出现问题的原因在于，在命令行中使用java编译源文件时，<code>-cp</code>参数通常应该放在源文件之前，这是规则。如若使用javac命令进行编译而不运行，顺序随意；如若使用java指令，则一定要注意顺序问题，否则会提示程序包不存在。Java编译器要求<code>-cp</code>参数在源文件之前是为了确保正确解析命令行参数并找到所需的类文件和库文件，这是Java编译过程的关键部分。</p>
+<p>当然，也可以在系统classpath中包含这个路径，但由于该jar文件使用范围不广，这样做会污染系统环境，因此不考虑。</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="https://AlvinZheng-rgb.github.io">Wenxin Zheng</a> 2023 &ndash; 2023 | <a href="https://github.com/AlvinZheng-rgb">Github</a> | <a href="https://twitter.com">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

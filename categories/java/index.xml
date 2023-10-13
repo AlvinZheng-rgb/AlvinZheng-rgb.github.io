@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JAVA on Alvin&#39;s Site</title>
+    <link>http://alvinzheng-rgb.github.io/categories/java/</link>
+    <description>Recent content in JAVA on Alvin&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Oct 2023 20:42:58 +0800</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java命令行编译、运行时的顺序问题</title>
+      <link>http://alvinzheng-rgb.github.io/note/2023/10/13/java-command-line-orders/</link>
+      <pubDate>Fri, 13 Oct 2023 20:42:58 +0800</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2023/10/13/java-command-line-orders/</guid>
+      <description>在完成Princeton Algorithms, Part 1的其中一个assignment时，我遇到了如下问题：
+RandomWord.java是我编写的java文件，其中需要使用algs4.jar中的类文件。classpath是一组目录的集合，它设置了JVM的搜索路径。因此，在命令行中进行编译的时候，需要通过-cp（classpath）说明algs4.jar的位置。如若不指定-cp，则它默认值为.，即当前目录。
+出现问题的原因在于，在命令行中使用java编译源文件时，-cp参数通常应该放在源文件之前，这是规则。如若使用javac命令进行编译而不运行，顺序随意；如若使用java指令，则一定要注意顺序问题，否则会提示程序包不存在。Java编译器要求-cp参数在源文件之前是为了确保正确解析命令行参数并找到所需的类文件和库文件，这是Java编译过程的关键部分。
+当然，也可以在系统classpath中包含这个路径，但由于该jar文件使用范围不广，这样做会污染系统环境，因此不考虑。</description>
+    </item>
+    
+  </channel>
+</rss>
