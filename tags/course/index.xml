@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>course on Alvin&#39;s Site</title>
+    <link>http://alvinzheng-rgb.github.io/tags/course/</link>
+    <description>Recent content in course on Alvin&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/tags/course/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Princeton: ALGORITHMS, Part 1</title>
+      <link>http://alvinzheng-rgb.github.io/note/2023/10/14/princeton-algs-partone/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2023/10/14/princeton-algs-partone/</guid>
+      <description>get in the mindset of being an active participant who writes and debugs code, solves problems, studies the available resources, and engages in the discussion forums, as opposed to a passive participant who just watches the lectures.
+to be continued&amp;hellip;
+1 introduction This lecture focuses on why we learn about algorithms. They may unlock the secrets of life and of the universe. This reason really motivates me.
+Also, building an aesthetic about algorithms.</description>
+    </item>
+    
+  </channel>
+</rss>

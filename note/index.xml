@@ -6,7 +6,19 @@
     <description>Recent content in Notes on Alvin&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Oct 2023 21:16:36 +0800</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://alvinzheng-rgb.github.io/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Princeton: ALGORITHMS, Part 1</title>
+      <link>http://alvinzheng-rgb.github.io/note/2023/10/14/princeton-algs-partone/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://alvinzheng-rgb.github.io/note/2023/10/14/princeton-algs-partone/</guid>
+      <description>get in the mindset of being an active participant who writes and debugs code, solves problems, studies the available resources, and engages in the discussion forums, as opposed to a passive participant who just watches the lectures.
+to be continued&amp;hellip;
+1 introduction This lecture focuses on why we learn about algorithms. They may unlock the secrets of life and of the universe. This reason really motivates me.
+Also, building an aesthetic about algorithms.</description>
+    </item>
+    
     <item>
       <title>同概率输出序列的某一元素（不使用额外空间）</title>
       <link>http://alvinzheng-rgb.github.io/note/2023/10/13/output-uniformly-at-random/</link>
@@ -56,17 +68,6 @@ data: {time: (new Date()).toString(),a: 10},但始终无法实现数据绑�
 原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
 解决方案 删除文件index.ts，或使用ts文件实现对应声明。
 reference 微信开发工具ts和js文件冲突</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://alvinzheng-rgb.github.io/note/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://alvinzheng-rgb.github.io/note/1/01/01/</guid>
-      <description>get in the mindset of being an active participant who writes and debugs code, solves problems, studies the available resources, and engages in the discussion forums, as opposed to a passive participant who just watches the lectures.
-ALGORITHMS Part 1 1 introduction This lecture focuses on why we learn about algorithms. They may unlock the secrets of life and of the universe. This reason really motivates me.
-Also, building an aesthetic about algorithms.</description>
     </item>
     
   </channel>
